@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title > Your Recipie List</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+ <ion-list>
+  <ion-item *ngFor="let recipe of recipies">
+    <ion-avatar>
+      <ion-img [src]="recipe.imageUrl" ></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding">{{recipe.title}}</ion-label>
+  </ion-item>
+
+ </ion-list>
+</ion-content>
